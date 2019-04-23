@@ -2,8 +2,574 @@
 <html>
 <head>
 <title>4月21日課題</title>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<link rel="stylesheet" href="js/slick/slick.css">
+<link rel="stylesheet" href="js/slick/slick-theme.css">
+<style>
+  .slick-next:before {
+    content: '→';
+    color:#000;
+    margin-right:30px;
+   }
+
+   .slick-prev:before {
+    content: '←';
+    color:#000;
+    margin-right:100px;
+    width:100%;
+   }
+
+</style> 
+<script>
+$(function(){
+$('.mein5-1').slick({
+  slidesToShow: 7,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+});
+
+ $('.menu3-1').on("mouseover",function(){
+    $(".menu3-2").toggle();
+ })
+
+ $('.menu3-1-2').on("mouseover",function(){
+    $(".menu3-2-1").toggle();
+ })
+
+$('.ac1').click(function(){
+	$(this).next('ul').slideToggle();
+         $('accordion .ac1').css('border-bottom','display');
+        
+	});
+
+ $('.top1').on("click",function(){
+    $(".top2").toggle();
+ })
+
+
+});
+</script>
 </head>
 <body>
+ <div id="wrapper">
+  <div id="menu-top">
+   <div id="left-menu-top" class="cf">
+    <div class="menu1">
+      <h3>LIG</h3> 
+    </div>
+    <div class="menu2">
+     <p>台東区上野発のWeb制作会社、世界へ</p>
+    </div>
+   </div>
+   <div id="right-menu-top" class="cf">
+     <div class="menu3">
+       <ul>
+         <li>
+            BLOG
+            <div class="menu3-1">
+              <p> ブログ</p>
+            </div>
+         </li>
+         <li>SERVICE
+            <div class="menu3-1-1">
+              <p>企業一覧</p>
+            </div>
+           <div class="menu3-3">
+           </div>
+         </li>
+         <li>RECRUIT
+            <div class="menu3-1-1">
+              <p> 採用情報</p>
+            </div>
+            <div class="menu3-3">
+            </div>
+         </li>
+         <li>COMPANY
+            <div class="menu3-1-2">
+              <p> 会社案内</p>
+            </div>
+           </li>
+           <li>CONTACT
+            <div class="menu3-1-1">
+              <p> お問い合わせ</p>
+            </div>
+            <div class="3-3">
+            </div>
+           </li>
+           <li>
+             <div class="3-3">
+                <i class="material-icons">search</i>
+             </div>
+            </li>
+         </ul>
+       </div>
+<!--menu-top-->
+  <div id="right-top">
+    <div class="top1">
+      <i class="material-icons">menu</i> 
+    </div>
+   </div>
+ </div>
+    <div class="top2"> 
+    <ul class="accordion1">
+    <li>
+        <div class="ac1 cf">
+         <p class="ac2">BLOG</p>
+         <p class="ac3">ブログ　＋</p>
+        </div> 
+        <ul class="inner">
+            <li class="content1-1">ブログトップ</li>
+            <li class="content1-1">Web 制作</li>
+            <li class="content1-1">コンテンツ制作</li>
+            <li class="content1-1">ゲストハウス</li>
+            <li class="content1-1">コーワーキング</li>
+            <li class="content1-1">教育</li>
+            <li class="content1-1">飲食</li>
+            <li class="content1-1">地方創生</li>
+            <li class="content1-1">経営</li>
+            <li class="content1-1">お知らせ/募集</li>
+            <li class="content1-1">殿堂入り記事</li>
+            <li class="content1-1">ライブラリー</li>
+            <li class="content1-1">連載記事</li>
+        </ul>
+    </li>
+    <li>
+        <div class="ac1 cf">
+         <p class="ac2">SERVICE</p>
+         <p class="ac3">事業一覧　＋</p>
+        </div> 
+        <ul class="inner">
+            <li class="content1-1">事業一覧</li>
+            <li class="content1-1">Web 制作</li>
+            <li class="content1-1">コンテンツ制作</li>
+            <li class="content1-1">ゲストハウス</li>
+            <li class="content1-1">コーワーキング</li>
+            <li class="content1-1">教育</li>
+            <li class="content1-1">飲食</li>
+            <li class="content1-1">地方創生</li>
+            <li class="content1-1">アート</li>
+        </ul>
+    </li>
+    <li>
+        <div class="ac1">
+         <p class="ac2">RECRUIT</p>
+         <p class="ac3">採用情報　＋</p>
+        </div> 
+        <ul class="inner">
+        </ul>
+    </li>
+    <li>
+        <div class="ac1 cf">
+         <p class="ac2">COMPANY</p>
+         <p class="ac3">会社案内　＋</p>
+        </div> 
+        <ul class="inner">
+            <li class="content1-1">会社概要</li>
+            <li class="content1-1">代表あいさつ</li>
+            <li class="content1-1">役員紹介</li>
+            <li class="content1-1">沿革</li>
+            <li class="content1-1">拠点一覧</li>
+            <li class="content1-1">メンバー</li>
+        </ul>
+    </li>
+     <div class="mein4-9-1">
+         <p>お問い合わせはこちら</p>
+     </div>
+        <div class="top3">
+          <ul>
+           <a href="#"><li>よくある質問</a>
+           <a href="#"><li>プライバシーポリシー</li></a>
+           <a href="#"><li>メディア・広告掲載について</li></a>
+           <a href="#"><li>サイトマップ</li></a>
+          </ul> 
+        </div> 
+  </div>
+</div>
+<!--right-top-->
+           <div class="menu3-2">
+             <ul>
+              <li>Web制作 ▶︎</li>
+              <li>コンテンツ制作　▶︎</li>
+              <li>ゲストハウス　▶︎</li>
+              <li>コワーキング　▶︎</li>
+              <li>教育　▶︎</li>
+              <li>飲食　▶︎</li>
+             </ul>
+             <ul>
+              <li>地方創生　▶︎</li>
+              <li>経営　▶︎</li>
+              <li>お知らせ/募集　▶︎</li>
+              <li>殿堂入り記事　▶︎</li>
+              <li>ライブラリ　▶︎</li>
+              <li>連載記事　▶︎</li>
+             </ul>
+           </div>
+           <div class="menu3-2-1">
+             <ul>
+              <li>会社概要　▶︎</li>
+              <li>代表あいさつ　▶︎</li>
+              <li>役員紹介　▶︎</li>
+              <li>沿革　▶︎</li>
+              <li>拠点一覧　▶︎</li>
+              <li>メンバー　▶︎</li>
+             </ul>
+            </div>
+<!--menu-displyablock--> 
+ <div id="menu-under"> 
+   <ul>
+     <li>Wed 制作</li>
+     <li>コンテンツ制作</li>
+     <li>ゲストハウス</li>
+     <li>コワーキング</li>
+     <li>教育</li>
+     <li>飲食</li>
+     <li>地方創作</li>
+   </ul>
+ </div>
+<!--menu-under-->
+  <div id="mein">
+   <div id="mein1">
+     <div class="mein1-1">
+       <img src="img/mein.jpg">
+     </div>
+     <div class="mein1-2">
+      <h2>Life is Good</h2>
+       <p>わくわくをつくり、みんなを笑顔にする</p>
+     </div>
+     <div class="mein1-3">
+      <h2>Life is Good</h2>
+     </div>
+   </div>
+     <div class="mein1-4">
+       <p>
+         LIGはWeb制作会社として2007年に創業し、オウンドメディアの先駆者として皆様に愛されてまいりました。かつては小さなビルの一室から始まった会社も、いまや海外も含めた複数の拠点を持ち、多数の事業を展開するに至ります。<br>
+<br>
+よく「何をしている会社なのかわからない」と言われます。それはLIGが「わくわく」することであれば未知の分野にでも踏み出していく姿勢を持った会社だからです。<br>
+<br>
+LIGの理念は「Life is Good」。これからも自分、ひいては誰かの「LifeをGoodにする」ために「わくわく」することならば、LIGはあらゆることに挑戦していきます。
+      </p>
+     </div>
+     <div id="mein1-5">
+      <a href="#"><img src="img/load.png"</a>
+     </div>
+<!--mein1-->
+     <div id="mein2">
+       <div id="mein2-1">
+          <h2>Service</h2>
+           <p>事業一覧</p>
+        <div class="mein2-1">
+          <div class="mein2-2 cf">
+           <img src="img/web.jpg">
+          </div>
+          <div class="mein2-3">
+            <h3>Web Production</h3>
+            <p>Web制作</p>
+          </div>
+         </div>
+        <div class="mein2-1">
+          <div class="mein2-2 cf">
+           <img src="img/kon.jpg">
+          </div>
+          <div class="mein2-3">
+            <h3>Content Production</h3>
+            <p>コンテンツ制作</p>
+          </div>
+         </div>
+        <div class="mein2-1">
+          <div class="mein2-2 cf">
+           <img src="img/gest.jpg">
+          </div>
+          <div class="mein2-3">
+            <h3>Guest House</h3>
+            <p>ゲストハウス</p>
+          </div>
+         </div>
+        <div class="mein2-1">
+          <div class="mein2-2 cf">
+           <img src="img/work.jpg">
+          </div>
+          <div class="mein2-3">
+            <h3>Coworking</h3>
+            <p>コワーキング</p>
+          </div>
+         </div>
+        <div class="mein2-1">
+          <div class="mein2-2 cf">
+           <img src="img/kyouiku.jpg">
+          </div>
+          <div class="mein2-3">
+            <h3>Education</h3>
+            <p>教育</p>
+          </div>
+         </div>
+        <div class="mein2-1">
+          <div class="mein2-2 cf">
+           <img src="img/eat.jpg">
+          </div>
+          <div class="mein2-3">
+            <h3>Food and Drink</h3>
+            <p>飲食</p>
+          </div>
+         </div>
+        <div class="mein2-1">
+          <div class="mein2-2 cf">
+           <img src="img/tiiki.jpg">
+          </div>
+          <div class="mein2-3">
+            <h3>Regional Activation</h3>
+            <p>地方創生</p>
+          </div>
+         </div>
+        <div class="mein2-1">
+          <div class="mein2-2 cf">
+           <img src="img/art.jpg">
+          </div>
+          <div class="mein2-3">
+            <h3>Art</h3>
+            <p>LIGアート事業部</p>
+          </div>
+         </div>
+       </div>
+     </div>
+<!--mein2-->
+     <div id="mein3">
+       <div class="mein3-1">
+         <h3>株式会社LIGの概要はこちら</h3>                 
+       </div>
+       <div class="mein3-2">
+         <p>会社概要 →</p>
+       </div>
+     </div>
+<!--mein3-->
+     <div id="mein4">
+       <div class="mein4-1 cf">
+         <div class="mein4-2">
+           <p>事業一覧</p>
+         </div>
+         <div class="mein4-3">
+           <h2>LIFE IS GODD</h2>
+         </div>
+       </div>
+       <div class="mein4-4 cf">
+         <div class="mein4-5">
+           <div class="mein4-7">
+             <p>our service</p>
+           </div>
+           <div class="mein4-8 cf">
+             <div class="mein4-10">
+               <div class="mein4-11">
+                  <img src="img/web.jpg">
+               </div>
+               <div class="mein4-11">
+                  <p>web 制作</p>
+               </div>
+             </div>
+             <div class="mein4-10">
+               <div class="mein4-11">
+                  <img src="img/kon.jpg">
+               </div>
+               <div class="mein4-11">
+                  <p>コンテンツ制作</p>
+               </div>
+             </div>
+             <div class="mein4-10">
+               <div class="mein4-11">
+                  <img src="img/gest.jpg">
+               </div>
+               <div class="mein4-11">
+                  <p>ゲストハウス</p>
+               </div>
+             </div>
+             <div class="mein4-10">
+               <div class="mein4-11">
+                  <img src="img/work.jpg">
+               </div>
+               <div class="mein4-11">
+                  <p>コワーキング</p>
+               </div>
+             </div>
+            </div>
+           <div class="mein4-8 cf">
+             <div class="mein4-10">
+               <div class="mein4-11">
+                  <img src="img/kyouiku.jpg">
+               </div>
+               <div class="mein4-11">
+                  <p>教育</p>
+               </div>
+             </div>
+             <div class="mein4-10">
+               <div class="mein4-11">
+                  <img src="img/eat.jpg">
+               </div>
+               <div class="mein4-11">
+                  <p>飲食</p>
+               </div>
+             </div>
+             <div class="mein4-10">
+               <div class="mein4-11">
+                  <img src="img/tiiki.jpg">
+               </div>
+               <div class="mein4-11">
+                  <p>地方創生</p>
+               </div>
+             </div>
+             <div class="mein4-10">
+               <div class="mein4-11">
+                  <img src="img/art.jpg">
+               </div>
+               <div class="mein4-11">
+                  <p>アート事業部</p>
+               </div>
+             </div>
+           </div>
+           <div class="mein4-9">
+             <p>お問い合わせはこちら</p>
+           </div>
+         </div>
+         <div class="mein4-6 cf">
+           <div class="mein4-12">
+             <div class="mein4-13">
+               <p>〒 POST</p>
+             </div>
+             <div class="mein4-16">
+               <p>LIGへの自由なメッセージお待ちしています</p>
+             </div>
+           </div>
+            <div class="mein4-14"> 
+            <textarea name="textarea" cols="50" rows="12" placeholder=""></textarea>
+            </div>
+           <div class="mein4-15">
+             <div class="mein4-16">
+               <p>頂いたご意見への回答は行っておりません。<br>
+                  返信の必要なお問い合わせはこちら
+               </p>
+             </div>
+             <div class="mein4-13">
+               <input type="submit" value="投稿">
+             </div>
+           </div>
+         </div> 
+       </div>
+     </div>
+<!--mein4-->
+     <div id="mein5">
+       <div class="mein5-1">
+         <a href="#"><div class="mein5-2"><img src="img/logo1.png"></div></a>
+         <a href="#"><div><img src="img/logo2.jpg"></div></a>
+         <a href="#"><div class="mein5-3"><img src="img/logo3.jpg"></div></a>
+         <a href="#"><div class="mein5-4"><img src="img/logo4.jpg"></div></a>
+         <a href="#"><div class="mein5-6"><img src="img/logo5.jpg"></div></a>
+         <a href="#"><div class="mein5-5"><img src="img/logo6.jpg"></div></a>
+         <a href="#"><div class="mein5-5"><img src="img/logo7.jpg"></div></a>
+         <a href="#"><div class="mein5-2"><img src="img/logo1.png"></div></a>
+         <a href="#"><div><img src="img/logo2.jpg"></div></a>
+         <a href="#"><div class="mein5-3"><img src="img/logo3.jpg"></div></a>
+         <a href="#"><div class="mein5-4"><img src="img/logo4.jpg"></div></a>
+         <a href="#"><div class="mein5-6"><img src="img/logo5.jpg"></div></a>
+         <a href="#"><div class="mein5-5"><img src="img/logo6.jpg"></div></a>
+         <a href="#"><div class="mein5-5"><img src="img/logo7.jpg"></div></a>
+       </div> 
+     </div>
+<!--mein5-->
+   </div>
+<!--mein-->
+   <div id="fotter">
+     <div  class="fotter1">
+       <h3>BLOG</h3>
+        <div class="fotter1-1">
+          <ul>
+           <a href="#"><li>ブログトップ</li></a>
+           <a href="#"><li>Web制作</li></a>
+           <a href="#"><li>コンテンツ制作</li></a>
+           <a href="#"><li>ゲストハウス</li></a>
+           <a href="#"><li>コワーキング</li></a>
+           <a href="#"><li>教育</li></a>
+           <a href="#"><li>飲食</li></a>
+           <a href="#"><li>地方創生</li></a>
+           <a href="#"><li>経営</li></a>
+           <a href="#"><li>お知らせ/募集</li></a>
+          </ul> 
+        </div>
+        <div class="fotter1-1">
+          <ul>
+           <a href="#"><li>テクノロジー</li></a>
+           <a href="#"><li>キャリア</li></a>
+           <a href="#"><li>キャリア</li></a>
+           <a href="#"><li>ライフ</li></a>
+           <a href="#"><li>エンタメ</li></a>
+           <a href="#"><li>殿堂入り記事</li></a>
+           <a href="#"><li>ライブラリ</li></a>
+           <a href="#"><li>連載記事</li></a>
+           <a href="#"><li>アート</li></a>
+          </ul> 
+        </div>
+     </div>
+     <div class="fotter2">
+        <div class="fotter2-1">
+         <h3>COMPANY</h3>
+          <ul>
+           <a href="#"><li>会社概要</li></a>
+           <a href="#"><li>代表あいさつ</li></a>
+           <a href="#"><li>役員紹介</li></a>
+           <a href="#"><li>沿革</li></a>
+           <a href="#"><li>拠点一覧</li></a>
+           <a href="#"><li>メンバー</li></a>
+          </ul> 
+        </div>
+        <div class="fotter2-2">
+         <div class="fotter2-3">
+          <h3>RECRUIT</h3>
+           <ul>
+            <a href="#"><li>採用情報</li></a>
+           </ul>
+          </div>
+          <div class="fotter2-4">
+          <ul>
+           <a href="#"><li>よくある質問</a>
+           <a href="#"><li>プライバシーポリシー</li></a>
+           <a href="#"><li>メディア・広告掲載について</li></a>
+           <a href="#"><li>サイトマップ</li></a>
+          </ul> 
+         </div>
+        </div>
+           
+     </div>
+     <div class="fotter3">
+       <div class="fotter3-1">
+        <div class="fotter3-2">
+           <h3>LIG</h3>
+        </div> 
+        <div class="fotter3-3">
+           <p>株式会社LIG<br>TEL : 0570-015-030<br>
+111-0056<br>東京都台東区小島2-20-11<br>
+LIGビル 1F受付</p>
+        </div> 
+       </div> 
+       <div class="fotter3-4">
+         <ul>
+           <a href="#"><li><i class="fab fa-line"></i></li></a>
+           <a href="#"><li><i class="fab fa-twitter"></i></li></a>
+           <a href="#"><li><i class="fab fa-facebook-f"></i></li></a>
+           <a href="#"><li><i class="fab fa-youtube"></i></li></a>
+           <a href="#"><li><i class="fab fa-instagram"></i></li></a>
+         </ul>
+      </div>
+     </div>
+   </div>
+<!--fotter-->
 
+</div>
+<!--wrapper-->
 </body>
 </html>
