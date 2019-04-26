@@ -1,0 +1,920 @@
+<!doctype html>
+<html>
+<head>
+<title>4月21日課題</title>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style2.css">
+<link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<link rel="stylesheet" href="js/slick/slick.css">
+<link rel="stylesheet" href="js/slick/slick-theme.css">
+<style>
+  .slick-next:before {
+    content: '→';
+    color:#000;
+    margin-right:30px;
+   }
+
+   .slick-prev:before {
+    content: '←';
+    color:#000;
+    margin-right:100px;
+    width:100%;
+   }
+
+</style> 
+<script>
+$(function(){
+$('.mein5-1').slick({
+  slidesToShow: 7,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+});
+
+ $('.menu3-1').on("mouseover",function(){
+    $(".menu3-2").toggle();
+ })
+
+ $('.menu3-1-2').on("mouseover",function(){
+    $(".menu3-2-1").toggle();
+ })
+
+$('.ac1').click(function(){
+	$(this).next('ul').slideToggle();
+         $('accordion .ac1').css('border-bottom','display');
+        
+	});
+
+ $('.top1').on("click",function(){
+    $(".top2").toggle();
+ })
+
+  $(window).scroll(function() {
+  console.log($(this).scrollTop());
+
+}); 
+
+$(function () {
+    var topBtn = $('#page-top');
+    topBtn.hide();
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 500) {
+            topBtn.fadeIn();
+        } else {
+            topBtn.fadeOut();
+        }
+    });
+    topBtn.click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 500);
+        return false;
+    });
+});
+
+
+
+
+
+});
+</script>
+</head>
+<body>
+ <div id="wrapper">
+  <div id="backmenu">
+    <img src="img/back.jpg">
+      <div class="backmenu1">
+        <h3>LIGのメニューに<br>Web開発サービス<br>ってあるの？</h3>  
+      </div>
+      <div class="backmenu2">
+        <p>あるよ。</p>
+      </div>
+      <div class="backmenu3">
+         <a href="#"><p>詳しく見る></p></a>
+      </div>
+  </div>
+<!--backmenu-->
+  <div id="menu-top">
+   <div id="left-menu-top" class="cf">
+    <div class="menu1">
+      <h3>LIG</h3> 
+    </div>
+    <div class="menu2">
+     <p>台東区上野発のWeb制作会社、世界へ</p>
+    </div>
+   </div>
+   <div id="right-menu-top" class="cf">
+     <div class="menu3">
+       <ul>
+        <a href="#">
+         <li>
+            BLOG
+            <div class="menu3-1">
+              <p> ブログ</p>
+            </div>  
+         </li>
+        </a>  
+        <a href="#">
+         <li>SERVICE
+            <div class="menu3-1-1">
+              <p>企業一覧</p>
+            </div>
+           <div class="menu3-3">
+           </div>
+         
+         </li>
+        </a>  
+        <a href="#">
+         <li>RECRUIT
+            <div class="menu3-1-1">
+              <p> 採用情報</p>
+            </div>
+            <div class="menu3-3">
+            </div>
+         </li>
+        </a>  
+        <a href="#">
+         <li>COMPANY
+            <div class="menu3-1-2">
+              <p> 会社案内</p>
+            </div>
+           </li>
+        </a>  
+        <a href="#">
+           <li>CONTACT
+            <div class="menu3-1-1">
+              <p> お問い合わせ</p>
+            </div>
+            <div class="3-3">
+            </div>
+           </li>
+        </a>  
+           <li>
+             <div class="3-3">
+                <i class="material-icons">search</i>
+             </div>
+            </li>
+        </a>  
+         </ul>
+       </div>
+<!--menu-top-->
+  <div id="right-top">
+    <div class="top1">
+      <i class="material-icons">menu</i> 
+    </div>
+   </div>
+ </div>
+    <div class="top2"> 
+    <ul class="accordion1">
+    <li>
+        <div class="ac1 cf">
+         <p class="ac2">BLOG</p>
+         <p class="ac3">ブログ　＋</p>
+        </div> 
+        <ul class="inner">
+            <a href="#"><li class="content1-1">ブログトップ</li></a> 
+            <a href="#"><li class="content1-1">Web 制作</li></a> 
+            <a href="#"><li class="content1-1">コンテンツ制作</li></a> 
+            <a href="#"><li class="content1-1">ゲストハウス</li></a> 
+            <a href="#"><li class="content1-1">コーワーキング</li></a> 
+            <a href="#"><li class="content1-1">教育</li></a> 
+            <a href="#"><li class="content1-1">飲食</li></a> 
+            <a href="#"><li class="content1-1">地方創生</li></a> 
+            <a href="#"><li class="content1-1">経営</li></a> 
+            <a href="#"><li class="content1-1">お知らせ/募集</li></a> 
+            <a href="#"><li class="content1-1">殿堂入り記事</li></a> 
+            <a href="#"><li class="content1-1">ライブラリー</li></a> 
+            <a href="#"><li class="content1-1">連載記事</li></a> 
+        </ul>
+    </li>
+    <li>
+        <div class="ac1 cf">
+         <p class="ac2">SERVICE</p>
+         <p class="ac3">事業一覧　＋</p>
+        </div> 
+        <ul class="inner">
+            <a href="#"><li class="content1-1">事業一覧</li></a> 
+            <a href="#"><li class="content1-1">Web 制作</li></a> 
+            <a href="#"><li class="content1-1">コンテンツ制作</li></a> 
+            <a href="#"><li class="content1-1">ゲストハウス</li></a> 
+            <a href="#"><li class="content1-1">コーワーキング</li></a> 
+            <a href="#"><li class="content1-1">教育</li</a> 
+            <a href="#"><li class="content1-1">飲食</li></a> 
+            <a href="#"><li class="content1-1">地方創生</li></a> 
+            <a href="#"><li class="content1-1">アート</li></a> 
+        </ul>
+    </li>
+    <li>
+        <div class="ac1">
+         <p class="ac2">RECRUIT</p>
+         <p class="ac3">採用情報　＋</p>
+        </div> 
+        <ul class="inner">
+        </ul>
+    </li>
+    <li>
+        <div class="ac1 cf">
+         <p class="ac2">COMPANY</p>
+         <p class="ac3">会社案内　＋</p>
+        </div> 
+        <ul class="inner">
+            <a href="#"><li class="content1-1">会社概要</li></a> 
+            <a href="#"><li class="content1-1">代表あいさつ</li></a> 
+            <a href="#"><li class="content1-1">役員紹介</li></a> 
+            <a href="#"><li class="content1-1">沿革</li></a> 
+            <a href="#"><li class="content1-1">拠点一覧</li></a> 
+            <a href="#"><li class="content1-1">メンバー</li></a> 
+        </ul>
+    </li>
+     <div class="mein4-9-1">
+         <a href="#"><p>お問い合わせはこちら</p></a> 
+     </div>
+        <div class="top3">
+          <ul>
+           <a href="#"><li>よくある質問</a>
+           <a href="#"><li>プライバシーポリシー</li></a>
+           <a href="#"><li>メディア・広告掲載について</li></a>
+           <a href="#"><li>サイトマップ</li></a>
+          </ul> 
+        </div> 
+  </div>
+</div>
+<!--right-top-->
+           <div class="menu3-2">
+             <ul>
+              <a href="#"><li>Web制作 ▶︎</li></a> 
+              <a href="#"><li>コンテンツ制作　▶︎</li></a> 
+              <a href="#"><li>ゲストハウス　▶︎</li></a> 
+              <a href="#"><li>コワーキング　▶︎</li></a> 
+              <a href="#"><li>教育　▶︎</li></a> 
+              <a href="#"><li>飲食　▶︎</li></a> 
+             </ul>
+             <ul>
+              <a href="#"><li>地方創生　▶︎</li></a> 
+              <a href="#"><li>経営　▶︎</li></a> 
+              <a href="#"><li>お知らせ/募集　▶︎</li></a> 
+              <a href="#"><li>殿堂入り記事　▶︎</li></a> 
+              <a href="#"><li>ライブラリ　▶︎</li></a> 
+              <a href="#"><li>連載記事　▶︎</li></a> 
+             </ul>
+           </div>
+           <div class="menu3-2-1">
+             <ul>
+              <a href="#"><li>会社概要　▶︎</li></a> 
+              <a href="#"><li>代表あいさつ　▶︎</li</a> 
+              <a href="#"><li>役員紹介　▶︎</li></a> 
+              <a href="#"><li>沿革　▶︎</li></a> 
+              <a href="#"><li>拠点一覧　▶︎</li></a> 
+              <a href="#"><li>メンバー　▶︎</li></a> 
+             </ul>
+            </div>
+<!--menu-displyablock--> 
+ <div id="menu-under"> 
+   <ul>
+     <a href="#"><li>Wed 制作</li></a>
+     <a href="#"><li>コンテンツ制作</li></a>
+     <a href="#"><li>ゲストハウス</li></a>
+     <a href="#"><li>コワーキング</li></a>
+     <a href="#"><li>教育</li></a>
+     <a href="#"><li>飲食</li></a>
+     <a href="#"><li>地方創作</li></a>
+   </ul>
+ </div>
+<!--menu-under-->
+  <div id="mein">
+   <div id="mein1" class="cf">
+      <div class="mein1-1">
+       <a href="#"><img src="img/left1.jpg"></a>
+       <a href="#"><img src="img/left2.jpg"></a>
+       <a href="#"><img src="img/left3.jpg"></a>
+       <a href="#"><img src="img/left4.jpg"></a>
+       <a href="#"><img src="img/left5.jpg"></a>
+     </div>
+    </div>
+<!--mein1-->
+     <div id="mein2" class="cf">
+       <div class="mein2-1">
+         <h3>バイリンガールに続け！人気のある女性YouTuberまとめ</h3>
+        <div class="meni2-2 cf">
+           <div class="mein2-3">
+             <div class="mein2-4">
+               <div class="mein2-6">
+                 <img src="img/urara.jpg">
+               </div>
+               <div class="mein2-6">
+                 <p>うらら</p>
+               </div>
+             </div>
+             <div class="mein2-4">
+                <p>2014.12.17</p>
+             </div>
+           </div>
+           <div class="mein2-3">
+              <div class="mein2-5">
+                  <p>エンタメ</p>
+              </div>         
+              <div class="mein2-5">
+                  <p>映像</p>
+              </div>         
+           </div>
+        </div>  
+    </div>
+    <div class="mein2-7">
+      <div class="mein2-8">
+          <img src="img/center.jpg">
+      </div>
+      <div class="mein2-9">
+         <p>
+        こんにちは、インターンのうららです。<br>
+<br>
+前回は「HIKAKINだけじゃない！ファン数10万人以上の人気YouTuberまとめ」で人気YouTuberをまとめました。
+<br>
+<br>
+「YouTuber」と聞くと、なんとなく男性のイメージがありませんか？<br>
+私も以前はそう思っていたのですが、調べてみると女性YouTuberもたくさんいることがわかりました。<br>
+<br>
+ということで、今回は女性にフィーチャーしてまとめます！<br>
+
+
+        </p>
+      </div>
+      <div class="mein2-10">
+        <h2>木下ゆうか</h2>
+      </div>
+      <div class="mein2-11">
+        <iframe width="720" height="315" src="https://www.youtube.com/embed/H8yXvTG3m5Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="mein2-12">
+         <img src="img/center2.jpg">
+          <p>https://www.youtube.com/channel/UCFTVNLC7ysej-sD5lkLqNGA</p>
+      </div>
+      <div class="mein2-13">
+         <p>
+
+大食いチャレンジ動画を毎日アップしている木下ゆうかさん。<br>
+ハンバーガー100個、お寿司200貫、わんこそば200杯などに挑戦しています。
+どうやってスリムな体型を維持しているのだろう……と不思議です。<br>
+<br>
+<br>
+ジャンル：大食い<br>
+ファン数：約4万6000人<br>
+総再生数：約431万<br>
+
+
+        </p>
+      </div>
+      <div class="mein2-10">
+        <h2>まなこ</h2>
+      </div>
+      <div class="mein2-11">
+<iframe width="720" height="315" src="https://www.youtube.com/embed/1uWnL0Kz6VE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="mein2-12">
+         <img src="img/center3.jpg">
+           <p>https://www.youtube.com/channel/UCWC0EZRRyUK-iGZjIe4YLdw</p>
+      </div>
+      <div class="mein2-13">
+         <p>
+
+ダンス動画を多数公開しているまなこさん。<br>
+アニメ『妖怪ウォッチ』のEDテーマ「ようかい体操第一」を踊った動画が有名な人です。他にもいろんな振り付けを踊っています。<br>
+<br>
+<br>
+ジャンル：踊ってみた<br>
+ファン数：約3万2000人<br>
+総再生数：約561万<br>
+
+
+        </p>
+      </div>
+      <div class="mein2-10">
+        <h2>鈴川絢子</h2>
+      </div>
+      <div class="mein2-11">
+<iframe width="720" height="315" src="https://www.youtube.com/embed/gL5F8Rb3njY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      </div>
+      <div class="mein2-12">
+         <img src="img/center4.jpg">
+            <p>https://www.youtube.com/user/suzukawaayako</p>
+      </div>
+      <div class="mein2-13">
+         <p>
+
+鉄道に関する動画を上げている鈴川絢子さん。<br>
+プラレールで遊んでいる姿が楽しそうです。本当に好きなんだなってことが伝わってくるチャンネルです。<br>
+<br>
+<br>
+ジャンル：鉄道<br>
+ファン数：約6万人<br>
+総再生数：約3044万<br>
+        </p>
+      </div>
+      <div class="mein2-10">
+        <h2>関口愛美</h2>
+      </div>
+      <div class="mein2-11">
+<iframe width="720" height="315" src="https://www.youtube.com/embed/Qxh4ibdI8wI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="mein2-12">
+         <img src="img/center2.jpg">
+            <p>https://www.youtube.com/user/aiminp</p>
+
+      </div>
+      <div class="mein2-13">
+         <p>
+
+「ロンリーデジタルパフォーマー」の肩書きで活動している関口愛美さん。<br>
+商品レビューや3Dペンを使ったパフォーマンスなど、ノンジャンルでいろんな動画を配信しています。<br>
+<br>
+ジャンル：やってみた<br>
+ファン数：約3万2000人<br>
+総再生数：約1681万<br>
+        </p>
+      </div>
+     <div class="mein2-14">
+       <div class="mein2-15">
+         <p>次のページ</p>
+       </div>
+       <div class="mein2-16">
+         <p>次は、メイク動画を作っているYouTuberのご紹介です。</p>
+       </div>       
+     </div>
+     <div class="mein2-17 cf">   
+       <div class="mein2-18">
+         <h3>＜</h3>
+       </div>
+       <div class="mein2-19">
+          <p>１</p>
+       </div>
+       <div class="mein2-20">
+          <p>２</p>
+       </div>
+       <div class="mein2-20">
+          <h3>＞</h3>
+       </div> 
+     </div>
+       <div class="mein2-21 cf">
+         <div class="mein2-22-1">
+             <img src="img/left1.jpg">
+         </div>
+         <div class="mein2-22">
+             <img src="img/left2.jpg">
+         </div>
+         <div class="mein2-22">
+             <img src="img/left3.jpg">
+         </div>
+         <div class="mein2-22">
+             <img src="img/left4.jpg">
+         </div>
+         <div class="mein2-22">
+             <img src="img/left5.jpg">
+         </div>
+      </div>
+       <div class="mein2-23">
+          <img src="img/center6.jpg">
+       </div>
+       <div class="mein2-24 cf">
+         <div class="mein2-25">
+           <img src="img/urara.jpg">
+         </div>
+         <div class="mein2-26">
+            <p>この記事を書いた人</p>
+              <h3>うらら</h3>
+               <p><span>エディター</span></p>
+         </div>
+         <div class="mein2-27">
+           <i class="fab fa-twitter"></i>
+         </div>
+       </div>
+ 
+       <div class="mein2-28-1">
+         <h3>おすすめ記事</h3>
+       </div>
+       <div class="mein2-28 cf">
+         <div class="mein2-29 cf">
+           <div class="mein2-30">
+             <img src="img/u1.jpg">
+           <p>2019.4.26</p>
+             <h3>
+             インターネットで迷子になって、一息つきたい。不思議な癒し系コンテンツ5選。
+            </h3>
+           </div>
+           <div class="mein2-30-1">
+             <img src="img/u2.jpg">
+           <p>2019.3.26</p>
+             <h3>
+              「うん、このシェルいいね」5年間使ってきたzshからfishにのりかえました
+            </h3>
+           </div>
+         </div>
+        <div class="mein2-31 cf">
+           <div class="mein2-32">
+              <img src="img/u3.jpg">
+           </div>
+           <div class="mein2-33">
+             <p>2019.4.16</p>
+              <h3>400種類のウイスキーが飲み比べできる！御徒町の「Whisky STAND」の魅力を紹介します</h3>
+           </div>
+        </div>
+        <div class="mein2-31 cf">
+           <div class="mein2-32">
+              <img src="img/u4.jpg">
+           </div>
+           <div class="mein2-33">
+             <p>2019.3.30</p>
+              <h3>【2019年】アラサー男性社会人が選ぶ、このマンガがすごい！5選</h3>
+           </div>
+        </div>
+        <div class="mein2-31 cf">
+           <div class="mein2-32">
+              <img src="img/u5.jpg">
+           </div>
+           <div class="mein2-33">
+             <p>PR (beauty-topic.net)</p>
+              <h3>皮膚科医の妻(46)「シワ、家で簡単に消えるよ?」効果が凄すぎて大炎上中</h3>
+           </div>
+        </div>
+        <div class="mein2-31 cf">
+           <div class="mein2-32">
+              <img src="img/u6.jpg">
+           </div>
+           <div class="mein2-33">
+             <p>PR (beauty-topic.net)</p>
+              <h3>皮膚科医の妻「イボ、家で簡単に取れるわよ?」効果が凄すぎて大炎上</h3>
+           </div>
+        </div>
+        <div class="mein2-31 cf">
+           <div class="mein2-32">
+              <img src="img/u7.jpg">
+           </div>
+           <div class="mein2-33">
+             <p>PR(マーベラスガール)</p>
+              <h3>『朝晩のちょっとした習慣で激ヤセ⁉』短期間で59kg→47.5kgになれたワケ?</h3>
+           </div>
+        </div>
+      </div>
+
+   </div>
+   </div>
+<!--mein2-->
+     <div id="mein3" class="cf">
+       <div class="3-1">
+        <div class="mein3-2">  
+          <img src="img/right.jpg">  
+        </div>
+        <div class="mein3-3 cf">
+          <ul>
+            <li>
+              <div class="mein3-4 cf">
+               <i class="fas fa-address-card"></i>
+             </div>
+              <div class="mein3-5">
+                 <p>メンバー<span>＞</span></p>        
+              </div>
+            </li>
+            <li>
+              <div class="mein3-4 cf">
+                  <i class="fab fa-buromobelexperte"></i>
+              </div>
+              <div class="mein3-5">
+                 <p>ライブラリー <span>＞</span></p>        
+              </div>
+            </li>
+            <li>
+              <div class="mein3-4 cf">
+                 <i class="fas fa-atlas"></i>
+              </div>
+              <div class="mein3-5">
+                 <p>連載記事 <span>＞</span></p>        
+              </div>
+            </li>
+            <li>
+              <div class="mein3-4 cf">
+                  <i class="fas fa-caret-square-down"></i>
+              </div>
+              <div class="mein3-5">
+                 <p>殿堂入り記事 <span>＞</span></p>        
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="mein3-6">
+            <img src="img/right1.jpg">
+        </div>
+        <div class="mein3-7 cf">
+          <img src="img/right3.jpg">
+          <div class="mein3-8 cf">
+            <div class="mein3-9">
+               <img src="img/u4.jpg">        
+            </div>
+            <div class="mein3-10">
+                <p>2019.4.16<p>
+               <h3>弁護士費用も割り勘できる？詐欺や消費者被害を救う集団訴訟プラットフォーム“enjin”とは</h3>
+            </div>
+              <div class="mein3-11">
+                <div class="mein3-12">
+                  <i class="fas fa-heart"></i>
+                </div>
+                <div class="mein3-12">
+                   <p>25</p>
+                </div> 
+             </div>
+          </div>
+          <div class="mein3-8 cf">
+            <div class="mein3-9">
+               <img src="img/u3.jpg">        
+            </div>
+            <div class="mein3-10">
+                <p>2019.4.24<p>
+               <h3>【今年の10連休はスキルアップ！】副業・生産性向上におすすめな動画講座5選</h3>
+            </div>
+              <div class="mein3-11">
+                <div class="mein3-12">
+                  <i class="fas fa-heart"></i>
+                </div>
+                <div class="mein3-12">
+                   <p>21</p>
+                </div> 
+             </div>
+          </div>
+          <div class="mein3-8 cf">
+            <div class="mein3-9">
+               <img src="img/u4.jpg">        
+            </div>
+            <div class="mein3-10">
+                <p>2019.4.16<p>
+               <h3>弁護士費用も割り勘できる？詐欺や消費者被害を救う集団訴訟プラットフォーム“enjin”とは</h3>
+            </div>
+              <div class="mein3-11">
+                <div class="mein3-12">
+                  <i class="fas fa-heart"></i>
+                </div>
+                <div class="mein3-12">
+                   <p>25</p>
+                </div> 
+             </div>
+          </div>
+          <div class="mein3-8 cf">
+            <div class="mein3-9">
+               <img src="img/u5.jpg">        
+            </div>
+            <div class="mein3-10">
+                <p>2019.3.29<p>
+               <h3>デニムのすばらしさを漫画で伝えたくて……</h3>
+            </div>
+              <div class="mein3-11">
+                <div class="mein3-12">
+                  <i class="fas fa-heart"></i>
+                </div>
+                <div class="mein3-12">
+                   <p>335</p>
+                </div> 
+             </div>
+          </div>
+        </div>
+        <div class="mein3-13">
+           <div class="mein3-14 cf">
+              <img src="img/right4.jpg">
+           </div>
+           <div class="mein3-14">
+             <img src="img/right5.jpg">
+           </div>
+        </div>
+       </div>
+     </div>
+     <div id="mein1-5">
+        <div id="page-top"><a href="">TOP</a></div>
+      <a href="#"><img src="img/load.png"</a>
+     </div>
+<!--mein3-->
+   </div>
+<!--mein-->
+     <div id="mein4">
+       <div class="mein4-1 cf">
+         <div class="mein4-2">
+           <p>事業一覧</p>
+         </div>
+         <div class="mein4-3">
+           <h2>LIFE IS GODD</h2>
+         </div>
+       </div>
+       <div class="mein4-4 cf">
+         <div class="mein4-5">
+           <div class="mein4-7">
+             <p>our service</p>
+           </div>
+           <div class="mein4-8 cf">
+             <div class="mein4-10">
+               <div class="mein4-11">
+                  <img src="img/web.jpg">
+               </div>
+               <div class="mein4-11-1">
+                  <p>web 制作</p>
+               </div>
+             </div>
+             <div class="mein4-10">
+               <div class="mein4-11">
+                  <img src="img/kon.jpg">
+               </div>
+               <div class="mein4-11-1">
+                  <p>コンテンツ制作</p>
+               </div>
+             </div>
+             <div class="mein4-10">
+               <div class="mein4-11">
+                  <img src="img/gest.jpg">
+               </div>
+               <div class="mein4-11-1">
+                  <p>ゲストハウス</p>
+               </div>
+             </div>
+             <div class="mein4-10">
+               <div class="mein4-11">
+                  <img src="img/work.jpg">
+               </div>
+               <div class="mein4-11-1">
+                  <p>コワーキング</p>
+               </div>
+             </div>
+            </div>
+           <div class="mein4-8 cf">
+             <div class="mein4-10">
+               <div class="mein4-11">
+                  <img src="img/kyouiku.jpg">
+               </div>
+               <div class="mein4-11-1">
+                  <p>教育</p>
+               </div>
+             </div>
+             <div class="mein4-10">
+               <div class="mein4-11">
+                  <img src="img/eat.jpg">
+               </div>
+               <div class="mein4-11-1">
+                  <p>飲食</p>
+               </div>
+             </div>
+             <div class="mein4-10">
+               <div class="mein4-11">
+                  <img src="img/tiiki.jpg">
+               </div>
+               <div class="mein4-11-1">
+                  <p>地方創生</p>
+               </div>
+             </div>
+             <div class="mein4-10">
+               <div class="mein4-11">
+                  <img src="img/art.jpg">
+               </div>
+               <div class="mein4-11-1">
+                  <p>アート事業部</p>
+               </div>
+             </div>
+           </div>
+           <div class="mein4-9">
+             <p>お問い合わせはこちら</p>
+           </div>
+         </div>
+         <div class="mein4-6 cf">
+           <div class="mein4-12">
+             <div class="mein4-13">
+               <p>〒 POST</p>
+             </div>
+             <div class="mein4-16">
+               <p>LIGへの自由なメッセージお待ちしています</p>
+             </div>
+           </div>
+            <div class="mein4-14"> 
+            <textarea name="textarea" cols="50" rows="12" placeholder=""></textarea>
+            </div>
+           <div class="mein4-15">
+             <div class="mein4-16">
+               <p>頂いたご意見への回答は行っておりません。<br>
+                  返信の必要なお問い合わせはこちら
+               </p>
+             </div>
+             <div class="mein4-13">
+               <input type="submit" value="投稿">
+             </div>
+           </div>
+         </div> 
+       </div>
+     </div>
+<!--mein4-->
+     <div id="mein5">
+       <div class="mein5-1">
+         <a href="#"><div class="mein5-2"><img src="img/logo1.png"></div></a>
+         <a href="#"><div><img src="img/logo2.jpg"></div></a>
+         <a href="#"><div class="mein5-3"><img src="img/logo3.jpg"></div></a>
+         <a href="#"><div class="mein5-4"><img src="img/logo4.jpg"></div></a>
+         <a href="#"><div class="mein5-6"><img src="img/logo5.jpg"></div></a>
+         <a href="#"><div class="mein5-5"><img src="img/logo6.jpg"></div></a>
+         <a href="#"><div class="mein5-5"><img src="img/logo7.jpg"></div></a>
+         <a href="#"><div class="mein5-2"><img src="img/logo1.png"></div></a>
+         <a href="#"><div><img src="img/logo2.jpg"></div></a>
+         <a href="#"><div class="mein5-3"><img src="img/logo3.jpg"></div></a>
+         <a href="#"><div class="mein5-4"><img src="img/logo4.jpg"></div></a>
+         <a href="#"><div class="mein5-6"><img src="img/logo5.jpg"></div></a>
+         <a href="#"><div class="mein5-5"><img src="img/logo6.jpg"></div></a>
+         <a href="#"><div class="mein5-5"><img src="img/logo7.jpg"></div></a>
+       </div> 
+     </div>
+<!--mein5-->
+   <div id="fotter">
+     <div  class="fotter1">
+       <h3>BLOG</h3>
+        <div class="fotter1-1">
+          <ul>
+           <a href="#"><li>ブログトップ</li></a>
+           <a href="#"><li>Web制作</li></a>
+           <a href="#"><li>コンテンツ制作</li></a>
+           <a href="#"><li>ゲストハウス</li></a>
+           <a href="#"><li>コワーキング</li></a>
+           <a href="#"><li>教育</li></a>
+           <a href="#"><li>飲食</li></a>
+           <a href="#"><li>地方創生</li></a>
+           <a href="#"><li>経営</li></a>
+           <a href="#"><li>お知らせ/募集</li></a>
+          </ul> 
+        </div>
+        <div class="fotter1-1">
+          <ul>
+           <a href="#"><li>テクノロジー</li></a>
+           <a href="#"><li>キャリア</li></a>
+           <a href="#"><li>キャリア</li></a>
+           <a href="#"><li>ライフ</li></a>
+           <a href="#"><li>エンタメ</li></a>
+           <a href="#"><li>殿堂入り記事</li></a>
+           <a href="#"><li>ライブラリ</li></a>
+           <a href="#"><li>連載記事</li></a>
+           <a href="#"><li>アート</li></a>
+          </ul> 
+        </div>
+     </div>
+     <div class="fotter2">
+        <div class="fotter2-1">
+         <h3>COMPANY</h3>
+          <ul>
+           <a href="#"><li>会社概要</li></a>
+           <a href="#"><li>代表あいさつ</li></a>
+           <a href="#"><li>役員紹介</li></a>
+           <a href="#"><li>沿革</li></a>
+           <a href="#"><li>拠点一覧</li></a>
+           <a href="#"><li>メンバー</li></a>
+          </ul> 
+        </div>
+        <div class="fotter2-2">
+         <div class="fotter2-3">
+          <h3>RECRUIT</h3>
+           <ul>
+            <a href="#"><li>採用情報</li></a>
+           </ul>
+          </div>
+          <div class="fotter2-4">
+          <ul>
+           <a href="#"><li>よくある質問</a>
+           <a href="#"><li>プライバシーポリシー</li></a>
+           <a href="#"><li>メディア・広告掲載について</li></a>
+           <a href="#"><li>サイトマップ</li></a>
+          </ul> 
+         </div>
+        </div>
+           
+     </div>
+     <div class="fotter3">
+       <div class="fotter3-1">
+        <div class="fotter3-2">
+           <h3>LIG</h3>
+        </div> 
+        <div class="fotter3-3">
+           <p>株式会社LIG<br>TEL : 0570-015-030<br>
+111-0056<br>東京都台東区小島2-20-11<br>
+LIGビル 1F受付</p>
+        </div> 
+       </div> 
+       <div class="fotter3-4">
+         <ul>
+           <a href="#"><li><i class="fab fa-line"></i></li></a>
+           <a href="#"><li><i class="fab fa-twitter"></i></li></a>
+           <a href="#"><li><i class="fab fa-facebook-f"></i></li></a>
+           <a href="#"><li><i class="fab fa-youtube"></i></li></a>
+           <a href="#"><li><i class="fab fa-instagram"></i></li></a>
+         </ul>
+      </div>
+     </div>
+   </div>
+<!--fotter-->
+
+</div>
+<!--wrapper-->
+</body>
+</html>
