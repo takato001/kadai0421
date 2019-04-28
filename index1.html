@@ -56,6 +56,28 @@ $('.ac1').click(function(){
     $(".top2").toggle();
  })
 
+$(function () {
+    var topBtn = $('#page-top');
+    topBtn.hide();
+    //スクロールが500に達したらボタン表示
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 500) {
+            topBtn.fadeIn();
+        } else {
+            topBtn.fadeOut();
+        }
+    });
+    //スルスルっとスクロールでトップへもどる
+    topBtn.click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 500);
+        return false;
+    });
+});
+
+
+
 
 });
 </script>
@@ -260,6 +282,7 @@ LIGの理念は「Life is Good」。これからも自分、ひいては誰か�
       </p>
      </div>
      <div id="mein1-5">
+       <div id="page-top"><a href="">TOP</a></div>
       <a href="#"><img src="img/load.png"</a>
      </div>
 <!--mein1-->

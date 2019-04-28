@@ -1,8 +1,6 @@
 #wrapper{
  width:100%;
  min-width:1413px;
- position:relative;
- z-index:0;
 }
 
 #menu-top{
@@ -282,6 +280,30 @@
 
 .mein1-4 p{
  line-height:40px;
+}
+
+#page-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 80%;
+}
+ 
+#page-top a {
+    display: block;
+    background: #666;
+    color: #fff;
+    width: 100px;
+    padding: 25px 0;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+}
+ 
+#page-top a:hover {
+    background:#FF773E;
+    text-decoration: none;
+   color:#FFF;
 }
 
 #mein1-5{
