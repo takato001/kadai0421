@@ -1189,21 +1189,34 @@ input{
 }
 
 
-
-
-
-
-
-
-
-
-
 @media(max-width: 590px){
+
+#mein1-5{
+ display:none;
+}
+
+.mein2-1 h3 {
+    font-size: 5vw;
+    line-height: 55px;
+}
+
+.mein2-16 {
+    float: left;
+    width: 85%;
+    color: #33bad2;
+    text-decoration: underline;
+    padding: 10px 20px;
+}
 
 #wrapper{
  min-width:initial; 
- width:130%;
+ width:100%;
 }
+
+#menu-under {
+ overflow:hidden;
+}
+
 
 #backmenu img {
     width: 100%;
@@ -1217,7 +1230,7 @@ input{
     position: absolute;
     z-index: 1;
     font-family: "Sawarabi Mincho";
-    font-size: 25px;
+    font-size: 2vw;
     top: 40px;
     left: 76px;
     line-height: 35px;
@@ -1228,17 +1241,17 @@ input{
     position: absolute;
     z-index: 1;
     font-family: "Sawarabi Mincho";
-    font-size: 60px;
-    top: 200px;
-    right: 0px;
+    font-size: 3vw;
+    top:18%;
+    right:36%;
     color: #FFF;
 }
 
 .backmenu3 {
     position: absolute;
     z-index: 1;
-    top: 200px;
-    right: -175px;
+    top: 29%;
+    right: 7%;
     background-color: #FF0000;
     color: #FFF;
     padding: 20px 50px;
@@ -1246,10 +1259,25 @@ input{
 
 #mein{
  height:9000px;
+ width:100%;
 }
 
 iframe{
- width:680px;
+ width:100%;
+}
+
+.mein2-12 img {
+ width:100%;
+}
+
+.mein2-17 {
+    padding: 3% 25%;
+}
+
+.mein2-5 {
+    float: left;
+    width: 40%;
+    padding: 0px 20px;
 }
 
 .menu1 h3 {
@@ -1277,11 +1305,13 @@ iframe{
 }
  
 #menu-under ul {
-    width: 100%;
+ overflow:hidden;
+ float:none;
+ width:100%;
 }
 
 #menu-under ul li {
- font-size: 12px;
+ width:auto;
 }
 
 #mein1{
@@ -1387,7 +1417,7 @@ iframe{
     width: 100%;
     position: relative;
     z-index: 4;
-    height: 350px;
+    height: 300px;
 }
 
 .mein4-1 {
@@ -1403,36 +1433,49 @@ iframe{
     letter-spacing: 15px;
 }
 
+.mein4-11-1 p {
+    font-size: 10px;
+    padding: 1px 2px;
+}
+
 .mein4-4 {
     position: absolute;
     z-index: 5;
     background-color: #EEEEEE;
-    padding: 30px 150px;
+    padding: 30px 10px;
     top: 30px;
     left: 0px;
 }
 
 #mein5 {
     background-color: #555555;
-    padding: 10px 70px;
+    padding: 10px 30px;
+    display:none;
 }
 
 #fotter {
  height: 480px;
- padding:8px 48px;
+ padding:8px 0px;
 }
 
 .fotter1{
  display:none;
 }
 
+.fotter3-1{
+ width:100%;
+}
+
+
 .fotter2{
  display:none;
 }
 
 .fotter3 {
-    width: 100%;
-    margin-top: 100px;
+width: 100%;
+margin-top: 100px;
+margin-left: 0px;
+}
 }
 
 .fotter3-2 {
